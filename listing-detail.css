@@ -36,6 +36,84 @@ img {
     height: 600px;
     /* max-width: 70rem; */
     object-fit: contain;
-    margin-top: 2rem;
-    border: 2px solid red;
+}
+
+.bold-desc {
+  font-weight: 700;
+}
+
+
+.even-columns {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.listing-text-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.listing-text-info h3 {
+  font-size: 25px;
+  font-family: Poppins, "sans-serif";
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.listing-text-info p {
+  font-size: 16px;
+  font-family: Poppins, "sans-serif";
+  margin-bottom: 0.5rem;
+}
+
+
+.header-watchlist{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.watchlist-btn {
+  border: none;
+  background-color: red;
+  color: white;
+  padding: 10px 26px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: Poppins, "sans-serif";
+  font-weight: 500;
+}
+
+.place-bid {
+  display: flex;
+  /* align-items: center; */
+  gap: 10px;
+}
+
+.place-bid input {
+  max-width: 160px;
+  font-family: Poppins, "sans-serif";
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border-radius: 8px;
+}
+
+.place-bid button {
+  padding: 10px 20px;
+  border: none;
+  background-color: black;
+  color: #fff;
+  border-radius: 8px;
+  font-family: Poppins, "sans-serif";
+}
+
+@media screen and (max-width: 800px) {
+  .even-columns {
+    flex-direction: column;
+  }
 }
